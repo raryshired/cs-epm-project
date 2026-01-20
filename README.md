@@ -39,7 +39,6 @@ End-to-end MLOps pipeline for engine condition classification using Gradient Boo
 │   └── pipeline.yml
 ├── deploy_to_hf.py
 ├── requirements-pipeline.txt
-├── RamnathanRavindran_PredictiveMaintenance_Notebook_Final_1.0_20260125.ipynb
 └── README.md
 ```
 
