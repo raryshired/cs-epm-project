@@ -19,7 +19,6 @@ mlflow.db
 mlartifacts/
 
 # Model artifacts (uploaded to HF)
-*.joblib
 *.pkl
 
 # Data files (uploaded to HF)
