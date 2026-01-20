@@ -23,7 +23,7 @@ mlartifacts/
 *.pkl
 
 # Data files (uploaded to HF)
-*.csv
+!*.csv
 
 # Jupyter
 .ipynb_checkpoints/
