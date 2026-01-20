@@ -6,7 +6,7 @@ End-to-end MLOps pipeline for engine condition classification using Gradient Boo
 
 - **Task:** Binary classification (Normal vs Faulty engine condition)
 - **Model:** Gradient Boosting (sklearn) with Bayesian hyperparameter optimization
-- **Metrics:** F1-Score ~78%, Recall ~97%
+- **Metrics:** F1-Score 77.76%, Recall 96.70%
 - **Deployment:** Streamlit app on Hugging Face Spaces
 
 ## Architecture
@@ -18,7 +18,6 @@ End-to-end MLOps pipeline for engine condition classification using Gradient Boo
 │   │   │   └── engine_data.csv
 │   │   ├── processed/
 │   │   │   ├── X_train.csv, y_train.csv
-│   │   │   ├── X_val.csv, y_val.csv
 │   │   │   └── X_test.csv, y_test.csv
 │   │   └── artifacts/
 │   │       ├── column_schema.json
@@ -74,7 +73,7 @@ python deploy_to_hf.py
 
 The GitHub Actions workflow automates:
 1. **register-dataset:** Upload raw dataset to Hugging Face Dataset Hub
-2. **data-prep:** Process data, create train/val/test splits, upload to HF
+2. **data-prep:** Process data, create train/test splits, upload to HF
 3. **model-training:** Train Gradient Boosting with BayesSearchCV, log to MLflow, upload model to HF
 4. **deploy-to-hf-space:** Deploy Streamlit app to Hugging Face Space
 
@@ -86,16 +85,16 @@ The GitHub Actions workflow automates:
 
 | Metric | Value |
 |--------|-------|
-| Accuracy | ~95% |
-| Precision | ~65% |
-| Recall | ~97% |
-| F1-Score | ~78% |
-| ROC-AUC | ~0.98 |
+| Accuracy | 65.13% |
+| Precision | 65.02% |
+| Recall | 96.70% |
+| F1-Score | 77.76% |
+| ROC-AUC | 0.6947 |
 
 **Key Features:**
 - Engine RPM is the strongest predictor
-- High recall (97%) ensures minimal false negatives (safety-focused)
-- Trained on 19,535 real engine sensor readings
+- High recall (96.70%) ensures minimal false negatives (safety-focused)
+- Trained on 13,674 engine sensor readings (70/30 train/test split)
 
 ## Environment Variables
 
