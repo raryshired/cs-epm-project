@@ -1,0 +1,57 @@
+# Environment and secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+cspylab/
+
+# MLflow
+mlruns/
+mlflow.db
+mlartifacts/
+
+# Model artifacts (uploaded to HF)
+*.joblib
+*.pkl
+
+# Data files (uploaded to HF)
+*.csv
+
+# Jupyter
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+*.ipynb
+*.html
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+
+# Keep these files
+!requirements.txt
+!requirements-pipeline.txt
+!README.md
+
+# Planning
+plans/
+references/
+
+# Documentation
+docs/

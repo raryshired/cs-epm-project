@@ -1,0 +1,10 @@
+{
+  "Coolant_Temperature": {
+    "investigation": "outlier_detected",
+    "max_value": 195.53,
+    "percentile_99": 91.78,
+    "rows_above_99th": 196,
+    "action": "no_capping",
+    "rationale": "Preserved for tree-based models; extreme values may be valid failure signals"
+  }
+}

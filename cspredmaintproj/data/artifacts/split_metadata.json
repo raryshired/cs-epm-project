@@ -1,0 +1,8 @@
+{
+  "split_ratio": "70/30",
+  "random_state": 42,
+  "stratified": true,
+  "train_samples": 13674,
+  "test_samples": 5861,
+  "total_samples": 19535
+}
