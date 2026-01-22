@@ -1,6 +1,6 @@
 """
 Data Preparation Upload Script
-Uploads processed train/val/test splits to Hugging Face dataset repository.
+Uploads processed train/test splits to Hugging Face dataset repository.
 """
 from huggingface_hub import HfApi
 import os

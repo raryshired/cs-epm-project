@@ -54,3 +54,10 @@ references/
 
 # Documentation
 docs/
+
+# Reports
+report/
+*.pdf
+*.tex
+*.out
+*.aux
