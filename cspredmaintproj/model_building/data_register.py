@@ -16,7 +16,6 @@ repo_type = "dataset"
 base_dir = Path(__file__).resolve().parents[1] / "data"
 raw_dir = base_dir / "raw"
 processed_dir = base_dir / "processed"
-encoders_dir = base_dir / "artifacts" / "encoders"
 
 if not raw_dir.exists():
     print(f"Error: Raw data folder not found at {raw_dir}")
@@ -55,6 +54,5 @@ def upload_if_exists(path: Path, path_in_repo: str):
 
 upload_if_exists(raw_dir, "raw")
 upload_if_exists(processed_dir, "processed")
-upload_if_exists(encoders_dir, "artifacts/encoders")
 
 print(f"Dataset upload step completed for {repo_id}")

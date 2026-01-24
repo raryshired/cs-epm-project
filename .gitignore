@@ -56,8 +56,8 @@ references/
 docs/
 
 # Reports
-report/
-*.pdf
+report/images/
 *.tex
 *.out
 *.aux
+*.log
