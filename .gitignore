@@ -27,8 +27,9 @@ mlartifacts/
 # Jupyter
 .ipynb_checkpoints/
 *-checkpoint.ipynb
-*.ipynb
+#*.ipynb
 *.html
+archive/
 
 # IDE
 .vscode/
@@ -55,9 +56,12 @@ references/
 # Documentation
 docs/
 
+#CC
+.claude/
+CLAUDE.md
+GEMINI.md
+
 # Reports
-report/images/
-*.tex
-*.out
-*.aux
-*.log
+report/
+!RamnathanRavindran_PredictiveMaintenance_InterimReport.pdf
+
